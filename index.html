@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexora - K1 PRO GYZ-4</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo"><img src="pics/logo2.png" alt="Nexora Logo" />
+      <button class="langbtn" onclick="setLanguage('et')">EST</button>
+<button class="langbtn" onclick="setLanguage('en')">ENG</button></div>
+      <div class="cart">
+        <div class="cart-wrapper">
+        <button class="cart-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-basket-icon lucide-shopping-basket"
+          >
+            <path d="m15 11-1 9" />
+            <path d="m19 11-4-7" />
+            <path d="M2 11h20" />
+            <path
+              d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"
+            />
+            <path d="M4.5 15.5h15" />
+            <path d="m5 11 4-7" />
+            <path d="m9 11 1 9" />
+          </svg>
+          <span class="cart-count">0</span>
+          
+
+        </button>
+        <div class="cart-dropdown hidden">
+            <div class="cart-items"></div>
+            <div class="total"></div>
+            <a href="" class="maksma" data-i18n="checkout">Vormista tellimus</a>
+      </div>
+        </div>
+        
+      </div>
+    </header>
+
+    <section class="b-crumb">
+      <main>
+      <a href="" data-i18n="crumb-home">Avaleht</a>
+      <span>/</span>
+      <a href="" data-i18n="crumb-pc">Arvutid</a>
+      <span>/</span>
+      <a href="" data-i18n="crumb-accessories">Lisaseadmed</a>
+      <span>/</span>
+      <a href="" data-i18n="crumb-keyboard">Klaviatuurid</a>
+    </section>
+
+    <main class="product">
+    <section class="prod">
+      <div class="prod-gallery" id="prod-gallery">
+        <img src="pics/klava-näide.png" alt="Keyboard" id="prod-img">
+      </div>
+      <div class="lil-pics">
+          <img class="lil active" src="pics/klava-näide.png" alt="" />
+          <img class="lil" src="pics/klava-laadimine.png" alt="" />
+          <img class="lil" src="pics/klava-nupp.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="prod-header">
+      <div class="limited" data-i18n="limited">
+        Piiratud koguses
+      </div>
+
+      <h1>Nexora K1 PRO GYZ-4</h1>
+
+      <p class="sub-txt" data-i18n="sub-txt">
+        Nexora K1 GYZ-4 PRO ühendab professionaalse jõudluse, modernse disaini ja premium-klassi mängurifunktsioonid kompaktses korpuses. Optilised nupud, kvaliteetne akustika, vastupidav alumiiniumraam ja kohandatav RGB-valgustus tagavad kiire, täpse ja mugava kasutuskogemuse nii mängimiseks kui ka igapäevatööks.
+      </p>
+
+      <div class="price">179.<sup>99</sup> €</div>
+
+      <div class="btns">
+          <button class="buy-now" data-i18n="add-to-cart" data-name="Nexora K1 PRO GYZ-4" data-price="179.99" data-img="pics/klava-näide.png">Lisa Ostukorvi</button>
+          <button class="similar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"/></svg></button>
+        </div>
+
+    </section>
+    </main>
+
+
+     <section class="prod-info" id="prod-info ">
+
+        <div class="btns-cont">
+
+      <button class="btn" id="info" data-target="prodCard" ><span data-i18n="product">Toote info</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+   <button class="btn" id="specs" data-target="specsCard" ><span data-i18n="data">Andmed</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+ <button class="btn" id="shipping" data-target="shippingCard" ><span data-i18n="shipping">Tarneinfo</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+ <button class="btn" id="warranty" data-target="warrantyCard" ><span data-i18n="warranty">Garantii</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+
+</div>
+ 
+
+      <div class="prod-card" id="prodCard">
+        <div class="kb">
+          <div class="kb-inf">
+      <h2>Nexora K1 GYZ-4 PRO</h2>
+      <p data-i18n="inf-1">Klaviatuur, mis ühendab professionaalse jõudluse, modernse disaini ja tipptasemel mängurifunktsioonid ühte kompaktsesse korpusesse. Klaviatuur on loodud kasutajatele, kes hindavad kiiret reageerimist, täpsust ja mugavat kasutuskogemust nii mängides kui ka igapäevatöös.</p>
+
+      <p data-i18n="inf-2">Optilised nupud tagavad ülikiire sisendi ning minimaalse latentsuse, võimaldades igal vajutusel jõuda süsteemini hetkega. Tänu täiustatud akustilisele konstruktsioonile on klahvivajutused puhtad, sügavad ja meeldivalt summutatud, pakkudes kvaliteetset kirjutamis- ja mängutunnetust.</p>
+
+      <p data-i18n="inf-3">Kompaktne korpus säästab lauaruumi, samal ajal kui vastupidav alumiiniumraam tagab stabiilsuse ka intensiivse kasutuse ajal. Täielikult kohandatav RGB-valgustus võimaldab luua omanäolise seadistuse ning sünkroonida valgusefekte ülejäänud mängurivarustusega.</p>
+
+
+      <p data-i18n="inf-4">Nexora K1 GYZ-4 PRO on loodud neile, kes soovivad kompromissitut jõudlust, modernset esteetikat ja premium-klassi kasutuskogemust igas olukorras.</p>
+    </div>
+    </div>
+    </div>
+
+
+   
+
+
+      <div class="specs-card" id="specsCard">
+      <ul class="specs-list">
+      <li class="header" data-i18n="overview" >Üldinfo</li>
+      <li><span data-i18n="manufacturer"> 🏭 Tootja</span> <span data-i18n="title">Nexora</span></li>
+      <li> <span data-i18n="type">💻 Tüüp</span> <span data-i18n="keyboard">Klaviatuur</span></li>
+      <li> <span data-i18n="wireless">📶 Juhtmevaba </span><span data-i18n="yes">Jah</span></li>
+      <li><span data-i18n="connectivity">🔌 Ühenduvus</span> <span>Bluetooth 5.0<br>USB-C</span></li>
+      <li> <span data-i18n="color">🎨 Värvus</span> <span data-i18n="customize">Kohandatav</span></li>
+      </ul>
+
+
+      <ul class="specs-list">
+      <li class="header" data-i18n="keyboard">Klaviatuur</li>
+      <li> <span  data-i18n="switch">⌨️ Klahvi tüüp </span><span  data-i18n="membrane">Membraan</span></li>
+      <li><span  data-i18n="lighting">🌈 Valgustus </span><span  data-i18n="adjustable">RGB, reguleeritav</span></li>
+      <li> <span  data-i18n="battery">🔋 Aku </span><span  data-i18n="lightoff">96 h (valgus väljas)</span></li>
+      <li>🇪🇪 Layout <span>ISO-EE</span></li>
+      <li>🎮 Anti-ghosting <span data-i18n="yes">Jah</span></li>
+      </ul>
+
+
+      <ul class="specs-list">
+      <li class="header" data-i18n="dimension">Mõõtmed</li>
+      <li><span data-i18n="weight">⚖️ Kaal</span> <span>568 g</span></li>
+      <li><span data-i18n="dimensions">📏 Mõõtmed</span> <span>440 × 140 × 30 mm</span></li>
+      <li><span data-i18n="form">🧩 Formaat </span><span>Full-size</span></li>
+      <li><span data-i18n="material">🧱 Materjal</span> <span data-i18n="abs">ABS plastik</span></li>
+      <li><span data-i18n="keysnum">🔢 Klahvide arv </span><span>104</span></li>
+      </ul>
+    </div>
+
+
+      <div class="prod-card" id="shippingCard">
+
+    <div class="shipping">
+
+    <div class="shipping-card">
+      <h3 data-i18n="courier">🚚 Kuller</h3>
+      <p data-i18n="home-delivery">Koju kohaletoimetamine</p>
+      <span data-i18n="days">1 - 4 tööpäeva</span>
+    </div>
+
+    <div class="shipping-card">
+      <h3 data-i18n="store">🏪 Kauplus</h3>
+      <p data-i18n="in-store">Tulen ise järgi</p>
+      <span data-i18n="day">1 - 3 tööpäeva</span>
+    </div>
+
+    <div class="shipping-card">
+      <h3 data-i18n="parcel">📦 Pakiautomaat</h3>
+      <p>Omniva / Smartpost / DPD</p>
+      <span data-i18n="day">1 - 3 tööpäeva</span>
+    </div>
+
+    <div class="shipping-card">
+      <h3 data-i18n="policy">↩️ Tagastus</h3>
+      <p class="return" data-i18n="return-day">14-päevane tagastusõigus</p>
+      <span data-i18n="e-store">E-poe tellimustele</span>
+    </div>
+
+  </div>
+    </div>
+
+
+     
+
+
+      <div class="prod-card" id="warrantyCard">
+
+  <div class="warranty-cont">
+
+    <div class="warranty-card">
+      <h3 data-i18n="warranty-year">🛡️ 2-aastane garantii</h3>
+      <p data-i18n="nexora-prods">Tootjapoolne garantii kõikidele Nexora toodetele.</p>
+    </div>
+
+    <div class="warranty-card">
+      <h3 data-i18n="replacement">⚡ Kiire vahetus</h3>
+      <p data-i18n="defective">Defektse toote korral kiire asendus või remont.</p>
+    </div>
+
+    <div class="warranty-card">
+      <h3 data-i18n="support">🔧 Tehniline tugi</h3>
+      <p data-i18n="help">Abi seadistamisel, ühendamisel ja tarkvara küsimustes.</p>
+    </div>
+
+    <div class="warranty-card">
+      <h3 data-i18n="easy-return">📦 Lihtne tagastus</h3>
+      <p data-i18n="free">Garantiijuhtumi korral tasuta tagastamine pakiautomaadi kaudu.</p>
+    </div>
+  </div>
+
+  </div>
+
+
+</section>
+
+
+
+        <section class="might-like">
+          <h2 data-i18n="prod-might-like">Tooted mis võivad sulle huvi pakkuda</h2>
+
+          <div class="might-like-prod">
+
+            <div class="might-like-card">
+            <img src="pics/headset.png" alt="">
+          <h2 data-i18n="headset">Nexora - K1 Pro GHX Kõrvaklapid</h2>
+          <p class="price"> 79.<sup>99</sup></p>
+          <button class="buy-now" data-i18n="add-to-cart" data-name="Nexora - K1 Pro GHX" data-price="79.99" data-img="pics/headset.png">Lisa ostukorvi</button>
+          <button class="similar" data-i18n="learn-more">Uuri lähemalt</button>
+</div>
+
+<div class="might-like-card">
+          <img src="pics/mouse.png" alt="">
+          <h2 data-i18n="mouse">Nexora - K1 Pro 458 Hiir</h2>
+          <p class="price"> 59.<sup>99</sup></p>
+          <button class="buy-now" data-i18n="add-to-cart" data-name="Nexora - K1 Pro 458" data-price="59.99" data-img="pics/mouse.png">Lisa ostukorvi</button>
+          <button class="similar" data-i18n="learn-more">Uuri lähemalt</button>
+</div>
+</div>
+        </section>
+
+<footer class="footer">
+  <div class="footer-cont">
+
+    <div class="footer-logo">
+      <h2>NEXORA</h2>
+      <p data-i18n="take-your-gaming">Viime sinu mängukogemuse järgmisele tasemele</p>
+    </div>
+
+    <div class="footer-colm">
+      <h3 data-i18n="links">Lingid</h3>
+      <a href="" data-i18n="footer-products">Tooted</a>
+      <a href="" data-i18n="order">Tarne</a>
+      <a href="" data-i18n="warranty">Garantii</a>
+      <a href="" data-i18n="contact">Kontakt</a>
+    </div>
+
+    <div class="footer-colm">
+      <h3 data-i18n="find-us">Jälgi meid</h3>
+      <a href="" >Facebook</a>
+      <a href="">Instagram</a>
+      <a href="">Twitter</a>
+    </div>
+
+    <div class="footer-colm">
+      <h3 data-i18n="footer-supp">Tugi</h3>
+      <a href="" data-i18n="footer-help">Abi</a>
+      <a href="" data-i18n="kkk">KKK</a>
+      <a href="" data-i18n="footer-return">Tagastus</a>
+    </div>
+
+    <div class="footer-colm-nl">
+      <h3 data-i18n="newsletter">Uudiskiri</h3>
+      <input type="email" placeholder="Sinu e-mail" color="white" data-i18n-placeholder="e-mail">
+      <button data-i18n="join">Liitu</button>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Nexora
+  </div>
+</footer>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
